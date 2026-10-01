@@ -1,0 +1,60 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #fff5f7 0%, #f0f9ff 45%, #f5fff8 100%);
+  --primary: #ff6b6b;
+  --primary-light: #ff8e8e;
+  --accent: #4ecdc4;
+  --accent-2: #ffe66d;
+  --text: #2d3436;
+  --muted: #636e72;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --shadow: 0 12px 40px rgba(255, 107, 107, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Noto Sans SC', system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.weibo-content {
+  line-height: 1.8;
+  white-space: pre-wrap;
+  font-size: 15px;
+}
+
+.hashtag {
+  color: #e17055;
+  font-weight: 500;
+}
